@@ -25,7 +25,7 @@ static const char *alphaV = "alphaV";
     
     if (!self.alphaView) {
         [self setBackgroundImage:[UIImage new] forBarMetrics:(UIBarMetricsDefault)];
-        self.alphaView = [[UIView alloc]initWithFrame:CGRectMake(0, -kStatusBarH, kScreenW, self.bounds.size.height + kStatusBarH)];
+        self.alphaView = [[UIView alloc]initWithFrame:CGRectMake(0, -Height_StatusBar, kScreenW, self.bounds.size.height + Height_StatusBar)];
         self.alphaView.userInteractionEnabled = NO; 
         [self insertSubview:self.alphaView atIndex:0];
     }

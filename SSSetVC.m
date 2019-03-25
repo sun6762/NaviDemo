@@ -28,6 +28,21 @@ static const CGFloat BannerViewH = 200;
     [self createUI];
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if (self.navigationController.navigationBar.alphaView) {
+        [self.navigationController.navigationBar overRideSetBackgroundColor:[UIColor clearColor]];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar overRideSetBackgroundColor:[UIColor clearColor]];
+//    if (!self.navigationController.navigationBar.alphaView) {
+//    }
+}
+
 - (void)createUI{
     self.view.backgroundColor = [UIColor whiteColor];
     // tableView 不随导航栏偏移

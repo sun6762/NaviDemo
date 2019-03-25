@@ -35,7 +35,7 @@ static const CGFloat cellHeight = 44;
     if (scrollView == self.tbView) {
         CGFloat offsetY = scrollView.contentOffset.y;
         NSLog(@"%.2f",offsetY);
-        if (offsetY > cellHeight * 3 - kTopMargin) {
+        if (offsetY > cellHeight * 3 - Height_NavBar) {
             self.title = @"hakunamatata";
         }else{
             self.title = @"title";

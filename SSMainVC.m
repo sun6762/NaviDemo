@@ -26,6 +26,11 @@
     [self createUI];
 }
 
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
+//}
+
 - (void)createUI{
     self.view.backgroundColor = [UIColor whiteColor];
     _dataArr = @[@"可拉伸banner", @"可变更self.title"];
